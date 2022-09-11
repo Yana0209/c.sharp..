@@ -1,0 +1,31 @@
+using System;
+
+namespace lesson1 
+{
+    internal class Program 
+    {
+        static void Main(string[] args)
+        {
+            string str;
+            int x,y,z,a,b;
+            Console.WriteLine("Enter the number 1");
+            str = Console.ReadLine();
+            x = Convert.ToInt32(str);
+            Console.WriteLine("Enter the number 2");
+            str = Console.ReadLine();
+            y = Convert.ToInt32(str);
+            Console.WriteLine("Enter the number 3");
+            str = Console.ReadLine();
+            z  = Convert.ToInt32(str);
+            a = x + y + z;
+            b = x * y * z;
+            if(a>b)
+                Console.WriteLine("Sum is  bigger then product ");
+            else if (a<b)
+                Console.WriteLine("Product is bigger then sum");
+            else
+                Console.WriteLine("Sum and product are equal");
+
+        }
+    }
+}
