@@ -1,0 +1,44 @@
+// Обчислити опір електричного ланцюга, що складається з трьох послідовно з'єднаних резисторів
+using System;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double R1 = 0;
+            double R2 = 0;
+            double R3 = 0;
+            double R = 0;
+            bool isR1Ok = false;
+            bool isR2Ok = false;
+            bool isR3Ok = false;
+
+        
+                Console.Write("Введіть значення Опору першого резистора R1= ");
+                string strR1 = Console.ReadLine();
+                isR1Ok = double.TryParse(strR1, out R1);
+                
+
+       
+                Console.Write("Введіть значення Опору другого резистора R2= ");
+                string strR2 = Console.ReadLine();
+                isR2Ok = double.TryParse(strR2, out R2);
+               
+                Console.Write("Введіть значення Опору третього резистора R3= ");
+                string strR3 = Console.ReadLine();
+                isR3Ok = double.TryParse(strR3, out R3);
+                
+
+            R = R1 + R2 + R3;
+
+            R1 = double.Parse(strR1);
+            R2 = double.Parse(strR2);
+            R3 = double.Parse(strR3);
+
+            Console.WriteLine("R= ");
+            Console.WriteLine(R);
+        }
+    }
+}
