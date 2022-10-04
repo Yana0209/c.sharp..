@@ -1,0 +1,34 @@
+using System;
+
+namespace Лб3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x1, x2, y1, y2;
+            Console.WriteLine("Введіть координату x першого поля x1: " );
+            string strx1 = Console.ReadLine();
+            int.TryParse(strx1, out x1);
+
+            Console.WriteLine("Введіть координату y першого поля y1: ");
+            string stry1 = Console.ReadLine();
+            int.TryParse(stry1, out y1);
+
+            Console.WriteLine("Введіть координату x другого поля x2: ");
+            string strx2 = Console.ReadLine();
+            int.TryParse(strx2, out x2);
+
+            Console.WriteLine("Введіть координату y другого поля y2: ");
+            string stry2 = Console.ReadLine();
+            int.TryParse(stry2, out y2);
+
+            if (y2 - y1 == x2 - x1)
+                Console.WriteLine(true);
+            else
+                Console.WriteLine(false);
+
+
+        }
+    }
+}
