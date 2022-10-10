@@ -15,7 +15,7 @@ namespace Lb4
             for (int x = 0; x < N; x++)
             {
                 mas[x] = rand.Next(10);
-              //  Console.WriteLine(x + " " + mas[x]);
+                Console.WriteLine(x + " " + mas[x]);
             }
            
             int min = Math.Abs(mas[0] - mas[1]);
